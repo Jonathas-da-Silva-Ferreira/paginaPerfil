@@ -310,6 +310,11 @@ body{
     cursor: pointer;
 }
 
+.righ-section .widgets{
+    display: flex;
+    flex-direction: column;
+}
+
 .righ-section .widgets .disco{
     background: #fff;
     margin-top: 35px;
@@ -324,10 +329,10 @@ body{
 
 .righ-section .widgets .disco .progress{
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
 
-.righ-section .widgets .disco .progress .proprogress-bar{
+.righ-section .widgets .disco .progress .progress-bar{
     width: 150px;
     height: 150px;
     background: radial-gradient(closest-side, #fff 79%, transparent 80% 100%), conic-gradient(#1976d2 25%, #e9e4ff 0%);
@@ -336,5 +341,58 @@ body{
     align-items: center;
     justify-content: center;
     gap: 2px;
-    
+    margin-top: 20px;
+    border-radius: 50%;
 }
+
+.righ-section .widgets .disco .progress .progress-bar::before{
+    content: "25%";
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.righ-section .widgets .disco .progress .progress-bar::after{
+    content: "usado";
+    font-size: 13px;
+    color: #999;
+}
+
+.righ-section .widgets  .disco .info h5{
+    color: #999;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.righ-section .widgets .disco h5 span{
+    color: #364670;
+}
+
+.righ-section .widgets .disco .info p{
+    font-size: 14px;
+    color: #999;
+    font-weight: 500;
+}   
+
+.righ-section .widgets .bottom{
+    display: flex;
+    flex-direction: column;
+}
+
+.righ-section .widgets .bottom button{
+    border: none;
+    background: #1976d2;
+    color: #fff;
+    margin: 30px 0;
+    font-size: 20px;
+    padding: 14px;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.righ-section .widgets .bottom button:hover{
+    background: #0d47a1;
+}
+
+.righ-section .widgets .bottom 
