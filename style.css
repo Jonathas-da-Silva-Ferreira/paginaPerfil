@@ -166,22 +166,26 @@ body{
     border-radius: 16px;
 }
 
-.main .acesso-rapido .item:nth-child(1) i{
+.main .acesso-rapido .item:nth-child(1) i,
+.main table tbody tr:nth-child(1) td.icon i{
     color: #1976d2;
     background: #e6e4ec;
 }
 
-.main .acesso-rapido .item:nth-child(2) i{
+.main .acesso-rapido .item:nth-child(2) i,
+.main table tbody tr:nth-child(2) td.icon i{
     color: #1d92f1;
     background: #ddeffd;
 }
 
-.main .acesso-rapido .item:nth-child(3) i{
+.main .acesso-rapido .item:nth-child(3) i,
+.main table tbody tr:nth-child(3) td.icon i{
     color: #ffd12c;
     background: #fff8df;
 }
 
-.main .acesso-rapido .item:nth-child(4) i{
+.main .acesso-rapido .item:nth-child(4) i,
+.main table tbody tr:nth-child(4) td.icon i{
     color: #0ab501;
     background: #cdffd4;
 }
@@ -213,10 +217,124 @@ body{
 }
 
 .main table tbody tr.selected,
-{
+.main table tbody tr:hover{
+    border-radius: 14px;
+    background: #e8eaf6;
+}
 
+.main table tbody tr td{
+    padding: 16px;
+}
+
+.main table tbody tr td.icon i{
+    font-size: 20px;
+    background: #e6e4ec;
+    padding: 8px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.main table tbody tr.selected td.icon i,
+.main table tbody tr:hover td.icon i{
+    border-radius:  #999;
+}
+
+.main table tbody tr td.name {
+    font-weight: 500;
+    font-size: 14px;
+    color: #364670;
+}
+
+.main table tbody tr td.extension,
+.main table tbody tr td.size{
+    color: #999;
+    font-size: 14px;
+}
+
+.main table tbody tr td.more i{
+    font-size: 20px;
+}
+
+.main table tbody tr td:first-child{
+    border-radius: 14px 0 0 14px;
+    padding-left: 15px;
+}
+
+.main table tbody tr td:last-child{
+    border-radius: 0 14px 14px 0;
 }
 
 .righ-section{
     flex: 2;
+    padding: 25px 25px 15px 10px;
+}
+
+.righ-section .perfil {
+    background: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    box-shadow: 0 2px 6px rgba(136, 148, 171, 0.2), 0 24px -24px rgba(71, 82, 107, 0.1);
+}
+
+.righ-section .perfil .info{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.righ-section .perfil .info img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.righ-section .perfil .info .conta h5{
+    font-size: 15px;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+.righ-section .perfil .info .conta p{
+    font-size: 13px;
+    color: #999;
+}
+
+.righ-section .perfil > i{
+    font-size: 24px;
+    color: #364670;
+    cursor: pointer;
+}
+
+.righ-section .widgets .disco{
+    background: #fff;
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 300px;
+    padding: 0 25px;
+    border-radius: 16px;
+    box-shadow: 0 2px 6px rgba(136, 148, 171, 0.2), 0 24px -24px rgba(71, 82, 107, 0.1);
+}
+
+.righ-section .widgets .disco .progress{
+    display: flex;
+    align-items: center;
+}
+
+.righ-section .widgets .disco .progress .proprogress-bar{
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(closest-side, #fff 79%, transparent 80% 100%), conic-gradient(#1976d2 25%, #e9e4ff 0%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    
 }
