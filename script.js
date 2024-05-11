@@ -14,8 +14,8 @@ sidebarItems.forEach(sideItem =>{
 tableRows.forEach(tableTR =>{
     tableTR.addEventListener('click', () =>{
         tableRows.forEach(item =>{
-            item.classList.remove('active');
+            item.classList.remove('selected');
         });
-        tableTR.classList.add('active');
+        tableTR.classList.add('selected');
     });
 });
