@@ -85,7 +85,7 @@ body{
     width: 75%;
     padding: 8px 10px;
     border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(136, 148, 171, 0.2), 0 24px -24px rgba(71, 82, 107, 0.1);
+    box-shadow: 0 2px 6px rgba(136, 148, 171, 0.2), 0 24px 20px -24px rgba(71, 82, 107, 0.1);
 }
 
 .main .header .procurar button{
@@ -152,7 +152,7 @@ body{
     border: 2px solid transparent;
     border-radius: 20px;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 6px rgba(136, 148, 171, 0.2), 0 24px -24px rgba(71, 82, 107, 0.1);
+    box-shadow: 0 2px 6px rgba(136, 148, 171, 0.2), 0 24px 20px -24px rgba(71, 82, 107, 0.1);
 }
 
 .main .acesso-rapido .item:hover{
@@ -208,7 +208,7 @@ body{
     width: 100%;
     border-radius: 14px;
     border-spacing: 0 8px;
-    box-shadow: 0 2px 6px rgba(136, 148, 171, 0.2), 0 24px -24px rgba(71, 82, 107, 0.1);
+    box-shadow: 0 2px 6px rgba(136, 148, 171, 0.2), 0 24px 20px -24px rgba(71, 82, 107, 0.1);
 }
 
 .main table tbody tr{
@@ -277,7 +277,7 @@ body{
     align-items: center;
     justify-content: space-between;
     border-radius: 15px;
-    box-shadow: 0 2px 6px rgba(136, 148, 171, 0.2), 0 24px -24px rgba(71, 82, 107, 0.1);
+    box-shadow: 0 2px 6px rgba(136, 148, 171, 0.2), 0 24px 20px -24px rgba(71, 82, 107, 0.1);
 }
 
 .righ-section .perfil .info{
@@ -324,7 +324,7 @@ body{
     height: 300px;
     padding: 0 25px;
     border-radius: 16px;
-    box-shadow: 0 2px 6px rgba(136, 148, 171, 0.2), 0 24px -24px rgba(71, 82, 107, 0.1);
+    box-shadow: 0 2px 6px rgba(136, 148, 171, 0.2), 0 24px 20px -24px rgba(71, 82, 107, 0.1);
 }
 
 .righ-section .widgets .disco .progress{
@@ -395,4 +395,46 @@ body{
     background: #0d47a1;
 }
 
-.righ-section .widgets .bottom 
+.righ-section .widgets .bottom .premium{
+    background: #fff;
+    padding: 25px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 16px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(136, 148, 171, 0.2), 0 24px 20px -24px rgba(71, 82, 107, 0.1);
+    transition: all 0.3s ease;
+}
+
+.righ-section .widgets .bottom .premium:hover{
+    box-shadow: none;
+    border-color: #999;
+}
+
+.righ-section .widgets .bottom .premium .title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.righ-section .widgets .bottom .premium .title h5{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.righ-section .widgets .bottom .premium .title i{
+    font-size: 30px;
+    padding: 10px;
+    background: #1976d2;
+    color: #fff;
+    border-radius: 14px;
+}
+
+.righ-section .widgets .bottom .premium p{
+    color: #999;
+    font-size: 16px;
+    line-height: 1.4rem;
+}
