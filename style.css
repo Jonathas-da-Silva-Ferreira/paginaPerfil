@@ -441,6 +441,28 @@ body{
 
 @media screen and (max-width: 1230px) {
     .left-section{
-        
+        width: 90px;
+    }   
+
+    .left-section h2{
+        font-size: 17px;
+    }
+
+    .left-section .sidebar .item{
+        justify-content: center;
+    }
+
+    .left-section .sidebar .item h3,
+    .left-section .logar h3{
+        display: none;
+    }
+
+    .left-section .sidebar .item i,
+    .left-section .logar i{
+        font-size: 26px;
+    }
+
+    .main .acesso-rapido{
+        justify-content: space-between;
     }
 }
