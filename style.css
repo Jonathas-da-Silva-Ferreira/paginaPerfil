@@ -49,8 +49,8 @@ body{
     transition: all 0.3s ease;
 }
 
-.left-section .sidebar .item.active h3,
-.left-section .sidebar .item.active i, 
+.left-section .sidebar .item .active h3,
+.left-section .sidebar .item .active i, 
 .left-section .sidebar .item:hover,
 .left-section .logar:hover{
     color: #0056b7;
@@ -246,7 +246,7 @@ body{
     color: #364670;
 }
 
-.main table tbody tr td.extension,
+.main table tbody tr td.extensão,
 .main table tbody tr td.size{
     color: #999;
     font-size: 14px;
@@ -465,4 +465,166 @@ body{
     .main .acesso-rapido{
         justify-content: space-between;
     }
+
+    .main .acesso-rapido .item{
+        width: 23%;
+    }
+
+    .main .acesso-rapido .item i{
+        font-size:  36px;
+    }
+
+    .main .acesso-rapido .item h5{
+        font-size: 16px;
+    }
+
+    .main .acesso-rapido .item p,
+    .righ-section .perfil .info .conta p{
+        font-size: 12px;
+    }
+
+    .righ-section .widgets .disco{
+        height: 270px;
+    }
+
+    .righ-section .widgets .disco .progress .progress-bar{
+        width: 120px;
+        height: 120px;
+    }
+
+    .righ-section .widgets .disco .info h5{
+        font-size: 18px;
+    }
+
+    .righ-section .widgets .bottom button{
+        font-size: 17px;
+        padding: 12px;
+    }
+
+    .righ-section .widgets .bottom .premium .title h5{
+        font-size: 17px;
+    }
+
+    .righ-section .widgets .bottom .premium .title i{
+        font-size: 26px;
+    }
+
+    .righ-section .widgets .bottom .premium p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .left-section {
+        position: absolute;
+        width: 160px;
+        left: -160px;
+        z-index: 1000;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .left-section .sidebar .item {
+        justify-content: start;
+    }
+
+    .left-section  .sidebar .item h3,
+    .left-section .logar h3{
+        display: block;
+    }
+
+    .left-section .sidebar .item i,
+    .left-section .logar i{
+        font-size: 22px;
+    }
+    
+
+    .main,
+    .righ-section{
+        padding: 15px;
+    }
+
+    .main .header {
+        gap: 10px;
+    }
+
+    .main .header .icon-btn i#menu-btn{
+        display: block;
+    }
+
+    .main .acesso-rapido .item p{
+        text-align: center;
+    }   
+
+    .main table tbody tr td.name,
+    .main table tbody tr td.extensão,
+    .main table tbody tr td.size{
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width: 760px) {
+    body{
+        flex-direction: column;
+    }
+
+    .main{
+        padding: 26px 15px 0;
+    }
+
+    .main .header{
+        justify-content: start;
+    }
+
+    .main .header .procurar{
+        width: 30%;
+    }
+
+    .righ-section .perfil{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+
+    .righ-section .widgets{
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .righ-section .widgets .disco{
+        width: 48%;
+    }
+
+    .righ-section .widgets .bottom{
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .righ-section .widgets .bottom button{
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .main{
+        padding: 100px 15px 0;
+    }
+
+    .main .header .procurar{
+        width: 60%;
+    }
+
+    .righ-section .perfil{
+        width: 94%;
+    }
+
+    .righ-section .widgets .disco .info h5{
+        font-size: 14px;
+    }
+
+    .righ-section .widgets .disco .info p{
+        font-size: 13px;
+    }
+
 }
